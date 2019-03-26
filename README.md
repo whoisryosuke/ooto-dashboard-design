@@ -13,3 +13,7 @@ Built on Create React App
 - [✅] Meetings Page
 - [] Create Event Page
 - [] Sessions Page
+
+## Credits
+
+- [ooto Productivity Dashboard on Uplabs](https://www.uplabs.com/posts/ooto-productivity-dashboards)
