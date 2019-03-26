@@ -3,6 +3,15 @@ import styled from "styled-components";
 
 import Button from "../Button/Button";
 
+const UserNav = styled("div")`
+  display: flex;
+  align-items: center;
+
+  & > a {
+    display: inline-block;
+  }
+`;
+
 function SearchHeader({ className }) {
   return (
     <nav className={className}>
@@ -50,7 +59,7 @@ function SearchHeader({ className }) {
             placeholder="Find a user, team, meeting..."
           />
         </div>
-        <div>
+        <UserNav>
           <a href="#">
             <Button>
               <svg
@@ -106,9 +115,9 @@ function SearchHeader({ className }) {
             </Button>
           </a>
           <a href="#" class="avatar">
-            <img src="#" alt="User avatar" />
+            <img src="https://via.placeholder.com/58x58" alt="User avatar" />
           </a>
-        </div>
+        </UserNav>
       </div>
     </nav>
   );
@@ -118,6 +127,7 @@ const StyledSearchHeader = styled(SearchHeader)`
   width: 100%;
   height: 100px;
   background: #fff;
+  border-bottom: 1px solid #e7e9ea;
 
   z-index: 710;
 
@@ -133,6 +143,7 @@ const StyledSearchHeader = styled(SearchHeader)`
     border-radius: 100%;
     overflow: hidden;
     margin-left: 2em;
+    display: inline-block;
   }
 
   & label {

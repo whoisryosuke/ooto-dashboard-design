@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 import Button from "../../components/Button/Button";
-import Filters from "../../components/Button/Button";
+import Filters from "../../components/Filters/Filters";
 import Kanban from "../../components/Kanban/Kanban";
 import KanbanCard from "../../components/KanbanCard/KanbanCard";
 import ContentSidebar from "../../components/ContentSidebar/ContentSidebar";
@@ -83,12 +83,12 @@ function Meetings({ className }) {
 }
 
 const StyledMeetings = styled(Meetings)`
-  padding:3em;
-  margin-right:250px;
+  padding: 3em;
+  margin-right: 250px;
 
   & header h1 {
     font-size: 2em;
-    font-weight:normal;
+    font-weight: normal;
   }
 
   & > header > div > h1 {
